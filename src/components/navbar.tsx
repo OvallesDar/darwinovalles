@@ -1,13 +1,55 @@
+import { Separator } from "@/components/ui/separator";
+import { Github, Instagram, Linkedin, Smartphone } from "lucide-react";
 export default function Navbar() {
   return (
-    <div className="flex py-3 px-6 gap-3 top-0 z-50">
-      <img src="/isotipo.png" alt="Darwin Ovalles logotipo" className="w-7" />
-        <p className="self-center font-bold text-lg">Portfolio</p>
-        <ul className="justify-center md:justify-end items-center gap-3 flex-1 hidden md:flex">
-            <li>Home</li>
-            <li>About</li>
-            <li>Cursos</li>
-        </ul>
+    <div className="flex gap-3 px-5 py-1 fixed top-0 z-50 h-14 items-center justify-between w-full ">
+      <img src="/isotipo.png" alt="" className="object-contain w-10" />
+      <div className="flex items-center">
+        <a
+          title="Github"
+          className="px-3"
+          href="https://github.com/OvallesDar"
+          target="_blank"
+        >
+          <Github scale={1.5} />
+        </a>
+        <Separator
+          orientation="vertical"
+          className="mr-2 data-[orientation=vertical]:h-4"
+        />
+        <a
+          title="LinkedIn"
+          className="px-3"
+          href="https://www.linkedin.com/in/darwin-ovalles-0127a8181/"
+          target="_blank"
+        >
+          <Linkedin />
+        </a>
+        <Separator
+          orientation="vertical"
+          className="mr-2 data-[orientation=vertical]:h-4"
+        />
+        <a
+          title="Instragram"
+          className="px-3"
+          href="https://www.instagram.com/ovallesdar/"
+          target="_blank"
+        >
+          <Instagram />
+        </a>
+        <Separator
+          orientation="vertical"
+          className="mr-2 data-[orientation=vertical]:h-4"
+        />
+        <a
+          title="WhatsApp"
+          className="px-3"
+          href="https://wa.me/34622083617"
+          target="_blank"
+        >
+          <Smartphone />
+        </a>
+      </div>
     </div>
-  )
+  );
 }

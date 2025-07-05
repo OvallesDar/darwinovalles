@@ -1,4 +1,6 @@
 
+
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -13,11 +15,23 @@
 
 .logo-mask {
   background: #F8E000;
-  mask-image: url("/logo-stack.svg");
+  mask-image: url("/jsLogo.svg");
   mask-position: center 25%;
   mask-repeat: no-repeat;
   mask-size: clamp(5000vh, 3500%, 0vh);
-  -webkit-mask-image: url("/logo-stack.svg");
+  -webkit-mask-image: url("/jsLogo.svg");
+  -webkit-mask-position: center 25%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: clamp(5000vh, 3500%, 0vh);
+}
+
+.logo-mask2 {
+  background: #276781;
+  mask-image: url("/doLogo.svg");
+  mask-position: center 25%;
+  mask-repeat: no-repeat;
+  mask-size: clamp(5000vh, 3500%, 0vh);
+  -webkit-mask-image: url("/doLogo.svg");
   -webkit-mask-position: center 25%;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: clamp(5000vh, 3500%, 0vh);
